@@ -5,7 +5,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class PautaAbertaNaoEncontradaException extends RuntimeException {
-    public PautaAbertaNaoEncontradaException(String msg) {
+	private static final long serialVersionUID = 1L;
+
+	public PautaAbertaNaoEncontradaException(String msg) {
         super(msg);
     }
 }

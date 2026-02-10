@@ -1,7 +1,5 @@
 package com.controlevotacao.controller;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -17,8 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.controlevotacao.exception.PautaAbertaNaoEncontradaException;
 import com.controlevotacao.model.Pauta;
 import com.controlevotacao.service.VotacaoService;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;

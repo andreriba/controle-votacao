@@ -6,8 +6,8 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class PautaVotacaoId implements Serializable {
-
-    private String idPauta;
+	private static final long serialVersionUID = 1L;
+	private String idPauta;
     private String codCpf;
 
     public PautaVotacaoId() {}

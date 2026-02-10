@@ -55,6 +55,7 @@ public class VotacaoService {
 		this.scheduler = scheduler;
 	}
 
+	//Cria pautas de votação com status Pendente
 	public String criarPauta(String idPauta) {
 	    try {
 	        Optional<Pauta> existente = pautaRepository.findById(idPauta);
@@ -82,6 +83,7 @@ public class VotacaoService {
 		return pautaRepository.findAll();
 	}
 
+	//Grava o voto sim ou nao se o cpf ainda não tiver votado na pauta
 	public String registrarVoto(PautaVotacao voto) {
 		Optional<Pauta> pautaOpt = pautaRepository.findById(voto.getId().getIdPauta());
 		if (!pautaOpt.isPresent()) {
@@ -136,6 +138,7 @@ public class VotacaoService {
 		return pautaRepository.findAllByStatusPauta("Fechada");
 	}
 	
+	//Abre a sesão para votação e será fechada automaticamente após o tempo em minutos definido no application.properties
 	public String abrirSessao(String idPauta, Integer duracaoMinutos) {
 	    try {
 	        Optional<Pauta> pautaOpt = pautaRepository.findById(idPauta);
@@ -181,6 +184,7 @@ public class VotacaoService {
 	    }
 	}
 
+	//Encaminha o voto e obtem os retornos da gravação do voto para retornar aa aplicação cliente
 	public ResponseEntity<Map<String, String>> processarVoto(PautaVotacao voto) {
 		String resultado = registrarVoto(voto);
 		Map<String, String> resposta = new HashMap<>();
@@ -204,6 +208,7 @@ public class VotacaoService {
 		}
 	}
 
+	//Gera cpfs sem pontos nem traços
 	public String gerarCpfAleatorio() {
 	    Random random = new Random();
 	    int n1 = random.nextInt(10);
@@ -228,6 +233,7 @@ public class VotacaoService {
 	    return String.format("%d%d%d%d%d%d%d%d%d%d%d", n1,n2,n3,n4,n5,n6,n7,n8,n9,d1,d2);
 	}
 	
+	//obter o total de votos sim e não de uma pauta
 	public Map<String, Object> obterResultadoPauta(String idPauta) {
 	    try {
 	        Optional<Pauta> pautaOpt = pautaRepository.findById(idPauta);
@@ -263,12 +269,13 @@ public class VotacaoService {
 	    }
 	}
 	
+	//faz validações para permitir a votação e processa o voto
 	public ResponseEntity<Map<String, String>> votar(String cpf, String tipoVoto) {
 	    log.debug("Request recebido em /votar/{}: {}", tipoVoto.toLowerCase(), cpf);
 
 	    Map<String, String> resposta = new HashMap<>();
 
-	    // Monta a URL a partir da propriedade e chama o serviço de vaçidação do cpf
+	    // Monta a URL a partir da propriedade e chama o serviço de validação do cpf
 	    String url = urlValidaCpf + cpf;
 
 	    ResponseEntity<Map<String, String>> response;
@@ -287,7 +294,7 @@ public class VotacaoService {
 	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resposta);
 	    }
 
-	    // Verifica o JSON retornado
+	    // Verifica o JSON retornado para saber se o cliente pode votar
 	    Map<String, String> body = response.getBody();
 	    if (body != null && body.containsKey("status")) {
 	        String status = body.get("status");
@@ -319,7 +326,7 @@ public class VotacaoService {
 	    return this.processarVoto(voto);
 	}
 	
-	//peridocamente verifica se existem pautas abertas e que já expiraram porque se houver reinicio do servidor podem ficar sem o fechamento do scheduler que abriu a sessão
+	//Peridocamente verifica se existem pautas abertas e que já expiraram porque se houver reinicio do servidor podem ficar sem o fechamento do scheduler que abriu a sessão
 	@Scheduled(fixedRate = 60000)
 	public void fecharPautasExpiradas() {
 	    List<Pauta> abertas = pautaRepository.findAllByStatusPauta("Aberta");
