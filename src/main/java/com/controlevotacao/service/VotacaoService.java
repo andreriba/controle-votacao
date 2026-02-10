@@ -274,6 +274,18 @@ public class VotacaoService {
 	    log.debug("Request recebido em /votar/{}: {}", tipoVoto.toLowerCase(), cpf);
 
 	    Map<String, String> resposta = new HashMap<>();
+	    
+	    String idPautaAberta = this.buscarIdPautaAberta();
+
+	    if ("ERRO".equals(idPautaAberta)) {
+	        resposta.put("mensagem", "Erro interno ao buscar pauta aberta para votação");
+	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resposta);
+	    }
+
+	    if (idPautaAberta == null) {
+	        resposta.put("mensagem", "Não existe pauta aberta para votação");
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(resposta);
+	    }
 
 	    // Monta a URL a partir da propriedade e chama o serviço de validação do cpf
 	    String url = urlValidaCpf + cpf;
@@ -303,18 +315,6 @@ public class VotacaoService {
 	            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(resposta);
 	        }
 	        // Se for "ABLE_TO_VOTE", segue normalmente
-	    }
-
-	    String idPautaAberta = this.buscarIdPautaAberta();
-
-	    if ("ERRO".equals(idPautaAberta)) {
-	        resposta.put("mensagem", "Erro interno ao buscar pauta aberta para votação");
-	        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resposta);
-	    }
-
-	    if (idPautaAberta == null) {
-	        resposta.put("mensagem", "Não existe pauta aberta para votação");
-	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(resposta);
 	    }
 
 	    // monta a entidade PautaVotacao com chave composta
