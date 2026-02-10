@@ -1,0 +1,175 @@
+2026-02-10 09:50:22 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 4452 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 09:50:22 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 09:50:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 09:50:23 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-02-10 09:50:24 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 09:50:24 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 09:50:24 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 09:50:24 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 09:50:24 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 09:50:24 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2107 ms
+2026-02-10 09:50:24 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 09:50:25 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 09:50:25 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 09:50:25 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 09:50:25 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 09:50:26 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 09:50:26 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 09:50:26 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 09:50:26 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 09:50:27 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 09:50:29 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 09:50:29 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 09:50:29 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 6.939 seconds (JVM running for 7.489)
+2026-02-10 09:50:42 INFO  [http-nio-50017-exec-1] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 09:50:42 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 09:50:42 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-10 12:06:46 INFO  [http-nio-50017-exec-1] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 344 ms
+2026-02-10 12:37:04 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 12:37:04 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 12:37:04 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-10 12:38:12 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 18208 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 12:38:12 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 12:38:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 12:38:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2026-02-10 12:38:15 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 12:38:15 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 12:38:15 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 12:38:15 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 12:38:16 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 12:38:16 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3104 ms
+2026-02-10 12:38:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 12:38:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 12:38:16 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 12:38:17 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 12:38:17 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 12:38:18 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 12:38:18 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 12:38:19 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 12:38:19 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 12:38:20 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 12:38:22 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 12:38:22 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 12:38:23 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 10.637 seconds (JVM running for 11.191)
+2026-02-10 13:31:05 INFO  [http-nio-50017-exec-6] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 13:31:05 INFO  [http-nio-50017-exec-6] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 13:31:05 INFO  [http-nio-50017-exec-6] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-10 13:42:59 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 13:42:59 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 13:42:59 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-10 13:43:28 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 21756 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 13:43:28 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 13:43:29 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 13:43:29 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2026-02-10 13:43:30 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 13:43:30 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 13:43:30 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 13:43:30 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 13:43:30 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 13:43:30 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2480 ms
+2026-02-10 13:43:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 13:43:31 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 13:43:31 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 13:43:32 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 13:43:32 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 13:43:33 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 13:43:33 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 13:43:34 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 13:43:34 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 13:43:35 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 13:43:37 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 13:43:38 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 13:43:38 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 10.523 seconds (JVM running for 11.277)
+2026-02-10 13:43:40 INFO  [http-nio-50017-exec-1] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 13:43:40 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 13:43:40 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-10 13:59:34 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 13:59:34 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 13:59:34 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-10 14:00:00 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 9172 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 14:00:00 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 14:00:01 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 14:00:01 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2026-02-10 14:00:03 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 14:00:03 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:00:03 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 14:00:03 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 14:00:03 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 14:00:03 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2177 ms
+2026-02-10 14:00:03 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 14:00:04 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 14:00:04 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 14:00:04 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 14:00:04 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 14:00:04 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 14:00:05 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 14:00:06 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 14:00:06 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:00:07 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 14:00:09 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:00:09 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 14:00:09 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 9.401 seconds (JVM running for 9.939)
+2026-02-10 14:02:21 INFO  [http-nio-50017-exec-1] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 14:02:21 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 14:02:21 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-10 14:04:30 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:04:30 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 14:04:30 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-10 14:05:05 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 22260 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 14:05:05 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 14:05:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 14:05:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2026-02-10 14:05:07 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 14:05:07 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:05:07 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 14:05:07 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 14:05:08 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 14:05:08 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2507 ms
+2026-02-10 14:05:08 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 14:05:08 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 14:05:08 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 14:05:09 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 14:05:09 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 14:05:09 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 14:05:09 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 14:05:10 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 14:05:10 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:05:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 14:05:13 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:05:13 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 14:05:13 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 8.829 seconds (JVM running for 9.369)
+2026-02-10 14:05:17 INFO  [http-nio-50017-exec-1] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 14:05:17 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 14:05:17 INFO  [http-nio-50017-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-10 14:17:31 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:17:31 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 14:17:31 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-10 14:18:02 INFO  [main] c.c.ControleVotacaoApplication - Starting ControleVotacaoApplication v0.0.1-SNAPSHOT using Java 1.8.0_281 on DSPN180100532 with PID 20204 (C:\_desenv\_TESTE\controle-votacao\target\controle-votacao-0.0.1-SNAPSHOT.jar started by andre.griba in C:\_desenv\_TESTE\controle-votacao)
+2026-02-10 14:18:02 INFO  [main] c.c.ControleVotacaoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-10 14:18:03 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10 14:18:03 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2026-02-10 14:18:04 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 50017 (http)
+2026-02-10 14:18:04 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:18:04 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-10 14:18:04 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-10 14:18:04 INFO  [main] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring embedded WebApplicationContext
+2026-02-10 14:18:04 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2309 ms
+2026-02-10 14:18:04 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-10 14:18:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-10 14:18:05 INFO  [main] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/controle-votacao-db'
+2026-02-10 14:18:05 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10 14:18:05 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-10 14:18:05 INFO  [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-10 14:18:06 INFO  [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2026-02-10 14:18:06 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-10 14:18:06 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:18:07 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10 14:18:08 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-50017"]
+2026-02-10 14:18:08 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 50017 (http) with context path '/controle-votacao'
+2026-02-10 14:18:08 INFO  [main] c.c.ControleVotacaoApplication - Started ControleVotacaoApplication in 7.178 seconds (JVM running for 7.729)
+2026-02-10 14:18:44 INFO  [http-nio-50017-exec-10] o.a.c.c.C.[.[.[/controle-votacao] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10 14:18:44 INFO  [http-nio-50017-exec-10] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-10 14:18:44 INFO  [http-nio-50017-exec-10] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-10 14:27:25 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10 14:27:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-10 14:27:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
